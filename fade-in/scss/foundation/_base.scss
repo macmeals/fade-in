@@ -1,0 +1,32 @@
+a,h1,h2,h3,button,small {
+  font-family: 'Slabo 27px', serif;
+  color:white;
+}
+
+
+p,label {
+  font-family: 'Noto Sans JP', sans-serif;
+  color:white;
+}
+
+p { line-height: 150%;
+    
+}
+
+
+html {
+  background-color:black;
+      // Edgeのスクロール非常時
+      &::-webkit-scrollbar {
+           display: none;
+      }
+
+}
+
+input,textarea {
+  background-color: white;
+}
+
+
+
+

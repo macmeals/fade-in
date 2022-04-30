@@ -1,0 +1,29 @@
+// mixin用名前空間の宣言
+@use "../../foundation/mixin" as mixin;
+
+.c-character {
+    &__noto {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    &__subtitlenum {
+        font-size: 48px;
+        font-family: 'Slabo 27px', serif;
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        font-family: 'Slabo 27px', serif;
+
+         @include mixin.smartphone {
+            font-size: 24px;
+            margin-bottom: 30px;
+         }
+    }
+
+    &__subtitlenoto {
+        font-size: 24px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+}

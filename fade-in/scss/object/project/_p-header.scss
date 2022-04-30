@@ -1,0 +1,54 @@
+@use "../../foundation/mixin" as mixin;
+
+.p-header {
+  background-color: black;
+  width: 920px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+    @include mixin.tablet {
+      width: 600px;
+      height: 160px;
+      flex-direction:row;
+      align-items: center;
+    }
+
+    @include mixin.smartphone {
+      width: 300px;
+      height: 100px;
+      justify-content: space-between;
+    }
+
+
+  
+
+  &__under {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+      @include mixin.tablet {
+        display: none;
+      }
+
+  }
+
+  &__icon {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+
+      @include mixin.smartphone {
+        width: 60px;
+      }
+
+
+  }
+
+}
